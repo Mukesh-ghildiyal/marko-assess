@@ -69,7 +69,7 @@ signalSchema.index({ 'interpretation.tags': 1 });
 signalSchema.index({ 'metadata.flags': 1 });
 
 // Pre-save hook to ensure interpretation structure exists
-signalSchema.pre('save', function (next) {
+signalSchema.pre('save', function () {
     if (!this.interpretation) {
         this.interpretation = {
             category: { value: 'unknown', confidence: 0 },
@@ -78,7 +78,6 @@ signalSchema.pre('save', function (next) {
             severity: { value: 'unknown', confidence: 0 }
         };
     }
-    next();
 });
 
 module.exports = mongoose.model('Signal', signalSchema);

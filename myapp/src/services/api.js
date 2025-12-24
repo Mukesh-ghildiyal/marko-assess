@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from 'react';
-import { AlertCircle, TrendingUp, Tag, Activity, Sparkles, Search } from 'lucide-react';
-
 // API service
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
