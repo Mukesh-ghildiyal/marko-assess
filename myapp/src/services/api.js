@@ -1,5 +1,5 @@
 // API service
-const API_URL = import.meta.env.VITE_API_URL || 'https://marko-assess-1.onrender.com/api';
+const API_URL = 'https://marko-assess-1.onrender.com/api';
 
 const api = {
     createSignal: async (rawText) => {
