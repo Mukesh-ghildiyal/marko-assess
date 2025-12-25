@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
     origin: function (origin, callback) {
         const allowedOrigins = [
-            'https://resilient-elf-fbe5b8.netlify.app',
+            'https://muku-marktonix.netlify.app/',
             'http://localhost:3000',
             'http://localhost:5173'
         ];
